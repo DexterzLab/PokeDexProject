@@ -1,0 +1,136 @@
+body{
+
+  background: linear-gradient( to bottom right, rgb(255, 0, 0),rgb(0, 162, 255));
+  background-attachment: fixed;
+
+}
+
+.title-section {
+  display: flex;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.7rem;
+  color: aliceblue;
+  
+
+
+}
+
+/* ===============SEARCH BAR ================== */
+
+.searchbar-section{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 2rem 2rem;
+}
+
+
+/* ================= MAIN DISPLAY================ */
+
+.card-container {
+  display: flex;
+  width: auto;
+  height: 30rem;
+  max-width: 30rem;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  flex-flow: column;
+  border-radius: 17px;
+  /*background-color: rgb(255, 39, 39);*/
+  background-color: white;
+  border: white solid 8px;
+  mix-blend-mode: normal;
+}
+
+
+.pokemonName {
+  /*
+  position: relative;
+  top: 23px;
+  */
+  margin-top: 2rem;
+  margin-bottom: auto;
+  display: block;
+  color: black;
+  justify-content: center;
+  align-self: center;
+  font-size: 2.8rem;
+}
+
+.pokemonImage {
+  
+  margin-top: auto;
+  margin-bottom: auto;
+  align-self: center;
+  flex: 1 1 auto;
+  aspect-ratio: auto;
+  /*background-color: aqua;*/
+  
+}
+
+
+/* ====================== STATS SECTION ================== */
+
+/* section that holds all the stats together*/
+.stats-section{
+
+  
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
+  
+
+}
+
+/* individual stats container */
+.stats-containter{
+
+  display: flex;
+  font-size: 2.1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  background-color: white;
+  border: black solid;
+  border-radius: 1rem;
+}
+
+
+.stats-title{
+
+  padding-right: 18px;
+  
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*===================== MEDIA CHANGES ========================= */
+
+
+/*==== PHONE=====*/
+@media screen and (max-width: 479px) {
+  .card-container {
+    width: auto;
+    height: auto;
+    margin-left: auto;
+    object-fit: fill;
+  }
+}

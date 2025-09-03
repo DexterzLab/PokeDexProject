@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokiDex Project</title>
+
+    <!-- styling and scripts links-->
+    <link rel="stylesheet" href="./PokiDex.css">
+    <script defer src="./PokiDex.js"></script>
+
+
+</head>
+<body>
+
+
+    <section class="main-container">
+
+        <div class="title-section">
+
+
+            <h1>Pokemon Searcher</h1>
+
+        </div>
+
+
+        <!-- Search bar of the pokemon-->
+        <div id="searchbar-section" class="searchbar-section">
+               
+            <input type="text" id="search-pokemonName" placeholder="Enter Pokemon name">
+            <button onclick="fetchData()">Fetch Pokemon</button>
+            
+            
+
+        </div>
+
+
+        <!-- Starts at the background, holds the main items for the pokemon-->
+        <div id="pokemon-card-container" class="card-container">
+
+            <p id="pokemonName" class="pokemonName">Pokemon Name</p>
+
+            <img src="" alt="Pokemon Sprite" id="pokemonImage" class="pokemonImage" style="display: block">
+
+        </div>
+
+        <!--Bottom section, Stats of the pokemon-->
+        <div id="stats-section" class="stats-section">
+
+            <div class="stats-containter">
+                <p class="stats-title">HP</p>
+                <p id="stats-hp" class="stats-value">0</p>
+            </div>
+            
+            
+            <div class="stats-containter">
+                <p class="stats-title">Attack</p>
+                <p id="stats-attack" class="stats-value">0</p>
+            </div>
+            
+            
+            <div class="stats-containter">
+                <p class="stats-title">Defence</p>
+                <p id="stats-defence" class="stats-value">0</p>
+            </div>
+
+            <div class="stats-containter">
+                <p class="stats-title">Speed</p>
+                <p id="stats-speed" class="stats-value">0</p>
+            </div>
+
+
+
+
+        </div>
+
+
+
+    </section>
+
+   
+    
+</body>
+</html>
